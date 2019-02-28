@@ -1157,7 +1157,7 @@
                 }, t.prototype.getSWRegistration_ = function() {
                     var e = this;
                     return this.registrationToUse ? this.waitForRegistrationToActivate_(this.registrationToUse) : (this.registrationToUse = null, navigator.serviceWorker.register("/test-g-push./firebase-messaging-sw.js", {
-                        scope: "/firebase-cloud-messaging-push-scope"
+                        scope: "/test-g-push./firebase-cloud-messaging-push-scope"
                     }).catch(function(e) {
                         throw v.create(E.FAILED_DEFAULT_REGISTRATION, {
                             browserErrorMessage: e.message
