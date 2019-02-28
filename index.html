@@ -5,7 +5,7 @@
     <title> OLOLOLO </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="https://nightmareblackengel.github.io/test-g-push./manifest.json">
-<!-- <script charset="utf-8" src="js/app.js"></script> -->
+<script charset="utf-8" src="https://www.gstatic.com/firebasejs/5.8.4/firebase-messaging.js"></script>
 <!--     <link rel="stylesheet" href="css/app.css" /> -->
 </head>
 <body>
@@ -13,10 +13,12 @@
   <h1>Привет это приложение для тестирования Пуш уведомлений(c file)</h1>
 
 
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-messaging.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>-->
+
 
 <script>
+    setTimeout(function() {
+    
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAnkLi5NMJABOulcxk3lEIVbWAPNuFnPgk",
@@ -62,7 +64,7 @@
         }).catch(function(err) {
           console.log('ошибка при получении прав.', err);
         });
-    
+    }, 500);
 </script>
     
     <!--  -->
