@@ -83,9 +83,16 @@
             //showToken('Unable to retrieve refreshed token ', err);
           });
         });
-        
+    
+        console.log('messageListening');
+        msgObj.onMessage(function(payload) {
+          console.log('Message received. ', payload);
+          // ...
+        });
         
     }, 500);
+    
+    
 </script>
     
     <!--  -->
